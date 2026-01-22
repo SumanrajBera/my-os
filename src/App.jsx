@@ -1,7 +1,8 @@
 import React from 'react'
 import Dock from './components/Dock'
 import Navbar from './components/Navbar'
-import MacWind from './components/windows/MacWind'
+import Github from './components/windows/Github'
+
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       <Navbar />
       <Dock />
 
-      <MacWind />
+      <Github />
     </main>
   )
 }
