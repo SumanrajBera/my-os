@@ -3,9 +3,9 @@ import MacWind from './MacWind'
 
 import "./resume.scss"
 
-const Resume = () => {
+const Resume = ({windowName, setWindowState}) => {
   return (
-    <MacWind>
+    <MacWind windowName={windowName} setWindowState={setWindowState}>
       <div className="resume-window">
         <iframe src="/resume.pdf" frameborder="0"></iframe>
       </div>

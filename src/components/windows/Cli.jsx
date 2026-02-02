@@ -4,7 +4,7 @@ import MacWind from './MacWind'
 import "./cli.scss"
 
 
-const Cli = () => {
+const Cli = ({windowName, setWindowState}) => {
     const commands = {
         about: {
             description: 'About me',
@@ -76,7 +76,7 @@ Other    : DSA, Problem Solving
 
     return (
         <>
-            <MacWind>
+            <MacWind windowName={windowName} setWindowState={setWindowState}>
                 <div className="cli-window">
                     <Terminal
                         commands={commands}
